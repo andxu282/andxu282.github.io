@@ -9,12 +9,14 @@ import * as React from 'react';
 const mainStyle = {
   display: 'grid',
   backgroundColor: '#080421',
-  height: '100%',
+  height: '100vh',
 };
 
 const profilePicStyle = {
   display: 'block',
   borderRadius: "20%",
+  height: '300px',
+  width: '300px',
 };
 
 const aboutMeStyle = {
@@ -33,11 +35,11 @@ function App() {
     <main style={mainStyle}>
       <AppBar />
       <Box display="flex" flexDirection="row" justifySelf="center" alignItems="center">
-        <img src={ProfilePic.src} style={profilePicStyle}/>
+        <img src={ProfilePic} style={profilePicStyle} alt="profilePic"/>
         <Box marginLeft="30px">
-        <Box fontWeight={700} fontSize="72px" lineHeight="72px">andrew xu</Box>
-        <Box fontWeight={400} fontSize="24px">cs @ cornell</Box>
-        <Box fontWeight={400} fontSize="24px">software development, linguistics</Box>
+        <Box fontWeight={700} fontSize="72px" lineHeight="72px" color="white">andrew xu</Box>
+        <Box fontWeight={400} fontSize="24px" color="white">cs @ cornell</Box>
+        <Box fontWeight={400} fontSize="24px" color="white">software development, linguistics</Box>
         </Box>
       </Box>
       <Paper style={aboutMeStyle} elevation={3}>
