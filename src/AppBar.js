@@ -16,7 +16,7 @@ function AppBar() {
     return (
       <Box display="flex" flexDirection="row" justifySelf="right" marginTop="16px" marginRight="16px">
         {Object.keys(pages).map((page) => (
-          <Button variant="outlined" href={pages[page]}>
+          <Button variant="outlined" href={pages[page]} style={buttonStyle}>
             {page}
           </Button>
         ))}

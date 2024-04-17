@@ -1,19 +1,13 @@
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import AppBar from '../AppBar';
+import Profile from '../Profile';
 import * as React from 'react';
-import ProfilePic from '@/assets/pfp.jpeg';
-
-const profilePicStyle = {
-  display: 'block',
-  borderRadius: "20%",
-};
-
 
 const mainStyle = {
   display: 'grid',
   backgroundColor: '#080421',
-  height: '100%',
+  height: '100vh',
 };
 
 const aboutMeStyle = {
@@ -27,18 +21,11 @@ const aboutMeStyle = {
   color: 'white',
 };
 
-function App() {
+function Meta() {
   return (
     <main style={mainStyle}>
       <AppBar />
-      <Box display="flex" flexDirection="row" justifySelf="center" alignItems="center">
-        <img src={ProfilePic.src} style={profilePicStyle}/>
-        <Box marginLeft="30px">
-        <Box fontWeight={700} fontSize="72px" lineHeight="72px">andrew xu</Box>
-        <Box fontWeight={400} fontSize="24px">cs @ cornell</Box>
-        <Box fontWeight={400} fontSize="24px">software development, linguistics</Box>
-        </Box>
-      </Box>
+      <Profile />
       <Paper style={aboutMeStyle} elevation={3}>
         <Box fontWeight={700} fontSize="72px" lineHeight="72px">meta</Box>
         <Box>
@@ -51,4 +38,4 @@ function App() {
   );
 }
 
-export default App;
+export default Meta;

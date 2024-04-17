@@ -2,21 +2,14 @@
 
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import ProfilePic from './assets/pfp.jpeg';
-import AppBar from './AppBar';
+import AppBar from '../AppBar';
 import * as React from 'react';
+import Profile from '../Profile';
 
 const mainStyle = {
   display: 'grid',
   backgroundColor: '#080421',
   height: '100vh',
-};
-
-const profilePicStyle = {
-  display: 'block',
-  borderRadius: "20%",
-  height: '300px',
-  width: '300px',
 };
 
 const aboutMeStyle = {
@@ -30,18 +23,11 @@ const aboutMeStyle = {
   color: 'white',
 };
 
-function App() {
+function Home() {
   return (
     <main style={mainStyle}>
       <AppBar />
-      <Box display="flex" flexDirection="row" justifySelf="center" alignItems="center">
-        <img src={ProfilePic} style={profilePicStyle} alt="profilePic"/>
-        <Box marginLeft="30px">
-        <Box fontWeight={700} fontSize="72px" lineHeight="72px" color="white">andrew xu</Box>
-        <Box fontWeight={400} fontSize="24px" color="white">cs @ cornell</Box>
-        <Box fontWeight={400} fontSize="24px" color="white">software development, linguistics</Box>
-        </Box>
-      </Box>
+      <Profile />
       <Paper style={aboutMeStyle} elevation={3}>
         <Box fontWeight={700} fontSize="72px" lineHeight="72px">about me</Box>
         <Box>
@@ -55,4 +41,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
