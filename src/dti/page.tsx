@@ -1,20 +1,19 @@
-'use client'
-
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import ProfilePic from './assets/pfp.jpeg';
-import AppBar from './AppBar';
+import AppBar from '../AppBar';
 import * as React from 'react';
+import ProfilePic from '@/assets/pfp.jpeg';
+
+const profilePicStyle = {
+    display: 'block',
+    borderRadius: "20%",
+  };
+
 
 const mainStyle = {
   display: 'grid',
   backgroundColor: '#080421',
   height: '100%',
-};
-
-const profilePicStyle = {
-  display: 'block',
-  borderRadius: "20%",
 };
 
 const aboutMeStyle = {
@@ -41,12 +40,12 @@ function App() {
         </Box>
       </Box>
       <Paper style={aboutMeStyle} elevation={3}>
-        <Box fontWeight={700} fontSize="72px" lineHeight="72px">about me</Box>
+        <Box fontWeight={700} fontSize="72px" lineHeight="72px">dti</Box>
         <Box>
-        Hello! I'm a senior at Cornell University, studying Computer Science in the College of Engineering.
-        Currently, I am the TPM of CoursePlan, a web app project that is a part of DTI.
-        DTI is a project team that designs, creates, and markets products that help the greater Cornell community.
-        I interned at Meta in Summer 2022, and from January to August of 2023, I worked as a software engineer intern at Enable Medicine. In my free time, I run, study languages, and meditate.
+        At Cornell, I'm involved with a student project team called DTI (Design Tech Initiative). We build web apps that benefit the
+        Cornell and greater Ithaca communities. The app that I worked on is called courseplan (courseplan.io), which helps students
+        plan out their courses while they're at Cornell. I worked as a developer for 3 semesters before becoming TPM (technical product
+        manager) in my last semester and helped onboard new developers on the team and assigning tasks.
         </Box>
       </Paper>
     </main>

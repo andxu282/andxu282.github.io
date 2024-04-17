@@ -1,20 +1,19 @@
-'use client'
-
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import ProfilePic from './assets/pfp.jpeg';
-import AppBar from './AppBar';
+import AppBar from '../AppBar';
 import * as React from 'react';
+import ProfilePic from '@/assets/pfp.jpeg';
+
+const profilePicStyle = {
+  display: 'block',
+  borderRadius: "20%",
+};
+
 
 const mainStyle = {
   display: 'grid',
   backgroundColor: '#080421',
   height: '100%',
-};
-
-const profilePicStyle = {
-  display: 'block',
-  borderRadius: "20%",
 };
 
 const aboutMeStyle = {
@@ -41,12 +40,12 @@ function App() {
         </Box>
       </Box>
       <Paper style={aboutMeStyle} elevation={3}>
-        <Box fontWeight={700} fontSize="72px" lineHeight="72px">about me</Box>
+        <Box fontWeight={700} fontSize="72px" lineHeight="72px">enable medicine</Box>
         <Box>
-        Hello! I'm a senior at Cornell University, studying Computer Science in the College of Engineering.
-        Currently, I am the TPM of CoursePlan, a web app project that is a part of DTI.
-        DTI is a project team that designs, creates, and markets products that help the greater Cornell community.
-        I interned at Meta in Summer 2022, and from January to August of 2023, I worked as a software engineer intern at Enable Medicine. In my free time, I run, study languages, and meditate.
+        I had the opportunity to intern at a biotech startup, Enable Medicine, from January until August 2023.
+        This was an amazing learning experience as I grew from a computer science student to a full software engineer.
+        Due to the small size of the company, I was forced to take on much more responsibility and ownership of features,
+        as well as being exposed to a variety of cutting edge technologies.
         </Box>
       </Paper>
     </main>

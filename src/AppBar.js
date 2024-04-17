@@ -12,7 +12,7 @@ const buttonStyle = {
 };
 
 function AppBar() {
-    const pages: { [key: string]: string } = {'about me': '/', 'meta': '/meta', 'enable medicine': '/enable', 'dti': '/dti'}
+    const pages = {'about me': '/', 'meta': '/meta', 'enable medicine': '/enable', 'dti': '/dti'}
     return (
       <Box display="flex" flexDirection="row" justifySelf="right" marginTop="16px" marginRight="16px">
         {Object.keys(pages).map((page) => (
@@ -24,4 +24,4 @@ function AppBar() {
     );
   }
 
-  export default AppBar;
+export default AppBar;
